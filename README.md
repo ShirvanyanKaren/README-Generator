@@ -93,9 +93,7 @@ ${description}
 
 * [Installation](#installation)
 * [Usage](#usage)
-* [Contributions](#contributions)
 * [Credits](#credits)
-* [Tests](#test)
 * [License](#license)
 * [Questions](#questions) 
 
