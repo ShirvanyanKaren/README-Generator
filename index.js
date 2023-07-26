@@ -29,6 +29,17 @@ const questions = [
         name: "contributions",
     },
     { 
+        type: "input",
+        message: "Please enter information about the credits to your project:",
+        name: "credits",
+    },
+    { 
+        type: "input",
+        message: "Please enter some information about tests you ran for your project:",
+        name: "tests",
+    },
+
+    { 
         type: "list",
         message: "Please choose a license:",
         choices: ["MIT", "Apache", "GPL", "BSD", "LGPL", "ODbl", "Perl", "SIL", "PDDL","WTFPL", "zLib"],
@@ -54,6 +65,8 @@ function writeToFile(fileName, response){
     const installation = response.installation;
     const usage = response.usage;
     const contributions = response.contributions;
+    const credits = response.credits;
+    const tests = response.tests;
     const license = response.license;
     const email = response.email;
     const github = response.github;
@@ -87,6 +100,8 @@ ${description}
 * [Installation](#installation)
 * [Usage](#usage)
 * [Contributions](#contributions)
+* [Credits](#credits)
+* [Tests](#test)
 * [License](#license)
 * [Questions](#questions) 
 
@@ -101,6 +116,14 @@ ${usage}
 ## Contributions 
         
 ${contributions}
+
+## Credits
+
+${credits}
+
+## Tests
+
+${tests}
         
 ## License 
         
@@ -108,8 +131,8 @@ ${license}
 
 ## Questions 
 
-Check out my other projects on my [my Github](https://github.com/${github})
-For any additional questions or concerns, please email me at ${email}`
+* Check out my other projects on my [my Github](https://github.com/${github})
+* For any additional questions or concerns, please email me at ${email}`
 
 
 
@@ -129,10 +152,6 @@ function init() {
     inquirer.prompt (
         questions
     )
-    // .then((response) => {
-
-        
-    // })
     .then ((response) => {
         console.log(response);
         writeToFile("read.me", response)
