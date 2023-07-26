@@ -1,6 +1,15 @@
 # README-Generator
 ![badgeImg](https://shields.io/badge/license-MIT-informational)
 
+## Technology used
+| Technology Used         | Resource URL           | 
+| ------------- |:-------------:| 
+| My Repository      | [https://github.com/ShirvanyanKaren/README-Generator](https://github.com/ShirvanyanKaren/README-Generator) |
+| Node JS          | [https://nodejs.org/it/docs](https://nodejs.org/it/docs) |
+| Git | [https://git-scm.com/](https://git-scm.com/)     | 
+
+
+
 # Description
 
 The purpose of this application is to create a README generator that prompts the users for various questions that represent section of the README file. Once The user has answered various questions including the title, choice of badge, installation, contributions, etc. then the desired markdown will be generated with the appropriate format.
@@ -118,9 +127,9 @@ Finally, the application will devlop a README file with your inputs
         
 This application can be utilize to create a quick README markdown file that thoroughly includes all the typical sections of a markdown. The user can expand upon these sections with their own information and even add a license badge.
         
-## Contributions 
-        
+## Credits
 
+Jehyun Jung from the Central Tutoring Center helped me with integrating the license badges.
         
 ## License 
      
